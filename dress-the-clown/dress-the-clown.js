@@ -1,5 +1,6 @@
-  // -    -   -   -   -  //
- // JAVASCRIPT CARNIVAL //
+// -    -   -   -   -  //
+// JAVASCRIPT CARNIVAL //
 // -    -   -   -   -  //
 
-console.log("Dress The Clown!")
+console.log('Dress The Clown!')
+headVariable.src = './images/head1.png'
