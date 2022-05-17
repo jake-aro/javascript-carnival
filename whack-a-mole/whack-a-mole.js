@@ -27,7 +27,7 @@ mole.onclick = whackedMole
 
 function whackedMole() {
   randomIndex = Math.floor(Math.random() * cells.length)
-  randomCell = cell[randomIndex]
+  randomCell = cells[randomIndex]
   randomCell.appendChild(mole)
 
   var audio = new Audio('./whack-audio.wav')
