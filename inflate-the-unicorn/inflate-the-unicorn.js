@@ -12,12 +12,11 @@ var uni1 = document.getElementById('uni1')
 var uni2 = document.getElementById('uni2')
 
 // create a variable that has inflation levels
-// Set it to 0 so, it will be 0 at first
 var inflationLevel0 = 0
 var inflationLevel1 = 0
 var inflationLevel2 = 0
 
-// from the variable Id that you get earlier put an event listener  that is embeded in html like the .onclick function.
+// from the variable Id that you get earlier put an event listener?  that is embeded in html/javascript like the .onclick function.
 // So whenever you click the photo it will call the function
 uni0.onclick = clicked
 uni1.onclick = clicked
