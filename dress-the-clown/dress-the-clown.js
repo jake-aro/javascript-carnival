@@ -24,13 +24,13 @@ function checkKey(e) {
 
 var headIndex = 0
 var bodyIndex = 0
-var feetIndex = 0
+var shoesIndex = 0
 
 var mainIndex = 0
 
 var head = document.getElementById('head')
 var body = document.getElementById('body')
-var feet = document.getElementById('feet')
+var shoes = document.getElementById('shoes')
 
 function changeHorizontal(shift) {
   if (mainIndex == 0) {
@@ -54,13 +54,13 @@ function changeHorizontal(shift) {
   }
 
   if (mainIndex == 2) {
-    feetIndex += shift
+    shoesIndex += shift
 
-    if (feetIndex < 0) feetIndex = 5
+    if (shoesIndex < 0) shoesIndex = 5
 
-    if (feetIndex > 5) feetIndex = 0
+    if (shoesIndex > 5) shoesIndex = 0
 
-    feet.src = './images/feet' + feetIndex + '.png'
+    shoes.src = './images/shoes' + shoesIndex + '.png'
   }
 }
 
