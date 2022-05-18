@@ -23,6 +23,10 @@ function checkKey(e) {
 }
 
 var headIndex = 0
+var bodyIndex = 0
+var feetIndex = 0
+
+var mainIndex = 0
 
 var head = document.getElementById('head')
 var body = document.getElementById('body')
@@ -31,9 +35,19 @@ var feet = document.getElementById('feet')
 function changeHorizontal(shift) {
   headIndex += shift
 
-  if (heatIndex < 0) heatIndex = 5
+  if (headIndex < 0) headIndex = 5
 
-  if (heatIndex > 5) heatIndex = 0
+  if (headIndex > 5) headIndex = 0
 
   head.src = './images/head' + headIndex + '.png'
+}
+
+function changeVertical(shift) {
+  mainIndex += shift
+
+  if (mainIndex < 0) mainIndex = 2
+
+  if (mainIndex > 2) mainIndex = 0
+
+  console.log(mainIndex)
 }
