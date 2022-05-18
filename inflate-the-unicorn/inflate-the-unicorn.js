@@ -32,23 +32,29 @@ function clicked(event) {
   if (unicorn.id == 'uni0') {
     inflationLevel0++
 
-    if (inflationLevel0 == 4) inflationLevel0 = 0
-
+    if (inflationLevel0 == 4) {
+      inflationLevel0 = 0
+      alert('It will Pop!')
+    }
     unicorn.src = './images/unicorn-' + inflationLevel0 + '.png'
   }
   if (unicorn.id == 'uni1') {
     inflationLevel1++
 
-    if (inflationLevel1 == 4) inflationLevel1 = 0
-
+    if (inflationLevel1 == 4) {
+      inflationLevel1 = 0
+      alert('It will Pop!')
+    }
     unicorn.src = './images/unicorn-' + inflationLevel1 + '.png'
   }
 
   if (unicorn.id == 'uni2') {
     inflationLevel2++
 
-    if (inflationLevel2 == 4) inflationLevel2 = 0
-
+    if (inflationLevel2 == 4) {
+      inflationLevel2 = 0
+      alert('It will Pop!')
+    }
     unicorn.src = './images/unicorn-' + inflationLevel2 + '.png'
   }
 }
