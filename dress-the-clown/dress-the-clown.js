@@ -9,8 +9,10 @@ document.onkeydown = checkKey
 
 function checkKey(e) {
   if (e.keyCode == '38') {
+    changeVertical(-1)
     // up arrow
   } else if (e.keyCode == '40') {
+    changeVertical(1)
     // down arrow
   } else if (e.keyCode == '37') {
     changeHorizontal(-1)
