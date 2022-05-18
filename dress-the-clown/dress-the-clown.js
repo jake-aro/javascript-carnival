@@ -50,7 +50,7 @@ function changeHorizontal(shift) {
 
     if (bodyIndex > 5) bodyIndex = 0
 
-    body.src = './images/head' + bodyIndex + '.png'
+    body.src = './images/body' + bodyIndex + '.png'
   }
 
   if (mainIndex == 2) {
@@ -60,7 +60,7 @@ function changeHorizontal(shift) {
 
     if (feetIndex > 5) feetIndex = 0
 
-    feet.src = './images/head' + feetIndex + '.png'
+    feet.src = './images/feet' + feetIndex + '.png'
   }
 }
 
