@@ -24,7 +24,12 @@ function checkKey(e) {
 
 var headIndex = 0
 
+var head = document.getElementById('head')
+var body = document.getElementById('body')
+var feet = document.getElementById('feet')
+
 function changeHorizontal(shift) {
   headIndex += shift
-  console.log(headIndex)
+
+  head.src = './images/head' + headIndex + '.png'
 }
