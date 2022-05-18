@@ -9,7 +9,6 @@ document.onkeydown = checkKey
 
 function checkKey(e) {
   if (e.keyCode == '38') {
-    console.log('i push up')
     // up arrow
   } else if (e.keyCode == '40') {
     // down arrow
