@@ -31,5 +31,9 @@ var feet = document.getElementById('feet')
 function changeHorizontal(shift) {
   headIndex += shift
 
+  if (heatIndex < 0) heatIndex = 5
+
+  if (heatIndex > 5) heatIndex = 0
+
   head.src = './images/head' + headIndex + '.png'
 }
