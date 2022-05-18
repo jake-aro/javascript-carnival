@@ -60,7 +60,7 @@ function changeHorizontal(shift) {
 
     body.src = './images/body' + bodyIndex + '.png' // source of the photo
   }
-  // if statement for feet
+  // if statement for shoes
   if (mainIndex == 2) {
     shoesIndex += shift
 
