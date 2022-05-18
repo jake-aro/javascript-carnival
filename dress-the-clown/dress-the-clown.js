@@ -33,13 +33,35 @@ var body = document.getElementById('body')
 var feet = document.getElementById('feet')
 
 function changeHorizontal(shift) {
-  headIndex += shift
+  if (mainIndex == 0) {
+    headIndex += shift
 
-  if (headIndex < 0) headIndex = 5
+    if (headIndex < 0) headIndex = 5
 
-  if (headIndex > 5) headIndex = 0
+    if (headIndex > 5) headIndex = 0
 
-  head.src = './images/head' + headIndex + '.png'
+    head.src = './images/head' + headIndex + '.png'
+  }
+
+  if (mainIndex == 1) {
+    bodyIndex += shift
+
+    if (bodyIndex < 0) bodyIndex = 5
+
+    if (bodyIndex > 5) bodyIndex = 0
+
+    body.src = './images/head' + bodyIndex + '.png'
+  }
+
+  if (mainIndex == 2) {
+    feetIndex += shift
+
+    if (feetIndex < 0) feetIndex = 5
+
+    if (feetIndex > 5) feetIndex = 0
+
+    feet.src = './images/head' + feetIndex + '.png'
+  }
 }
 
 function changeVertical(shift) {
@@ -48,6 +70,4 @@ function changeVertical(shift) {
   if (mainIndex < 0) mainIndex = 2
 
   if (mainIndex > 2) mainIndex = 0
-
-  console.log(mainIndex)
 }
