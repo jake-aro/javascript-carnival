@@ -1,7 +1,7 @@
 // -    -   -   -   -  //
 // JAVASCRIPT CARNIVAL //
 // -    -   -   -   -  //
-
+// PSEUDOCODE //
 // push the left and right arrow keys to change the outfit
 // push the up and down keys to change which part of the body were changing
 
@@ -39,8 +39,8 @@ var body = document.getElementById('body')
 var shoes = document.getElementById('shoes')
 
 function changeHorizontal(shift) {
+  // if statement for the head
   if (mainIndex == 0) {
-    // if statement for the head
     headIndex += shift
 
     if (headIndex < 0) headIndex = 5 // count till 5
@@ -50,8 +50,8 @@ function changeHorizontal(shift) {
     head.src = './images/head' + headIndex + '.png' // source of the photo
   }
 
+  // if statement for body
   if (mainIndex == 1) {
-    // if statement for body
     bodyIndex += shift
 
     if (bodyIndex < 0) bodyIndex = 5 // count till 5
@@ -60,9 +60,8 @@ function changeHorizontal(shift) {
 
     body.src = './images/body' + bodyIndex + '.png' // source of the photo
   }
-
+  // if statement for feet
   if (mainIndex == 2) {
-    // if statement for feet
     shoesIndex += shift
 
     if (shoesIndex < 0) shoesIndex = 5 // count till 5
