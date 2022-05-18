@@ -24,7 +24,7 @@ uni2.onclick = clicked
 
 // figure out which unicorn I clicked
 // increase its inflation level
-// change the src of the image to the new picture
+// change the src of the image to the new inflation balloon
 
 function clicked(event) {
   var unicorn = event.target
